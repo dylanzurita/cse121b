@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link type="text/css" rel="stylesheet" href="styles/personal.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  sign up | v70</title>
+</head>
+<body>
+    <header>
+        <a id="logo_link" href="music-player.html">
+            <img id="logo" src=# alt="logo">
+        </a>
+        <h1>v70 Music</h1>
+    </header>
+    <main>
+        <section id="section1">
+            <p>Your platform to listen to your favorite music, where you'll find suggestions and people with your same taste in music,
+                you can even leave comments on the music you listen or in any other new song you discover.
+            </p>
+            <picture>  
+                <img src="images/placeholder.png" alt="log in img">
+            </picture> 
+            <p>
+                A NEW WAY TO LIVE MUSIC
+            </p>
+        </section>
+        <section>
+            <h2>Sign up for free</h2>
+            <div>
+                <label for="username">username</label>
+                <input type="text" id="username" name="username">
+            </div>
+            <div>
+                <label for="password">password</label>
+                <input type="text" id="password" name="password">
+            </div>
+            <div>
+                <button type="button" id="signup" onclick="userRegistration()" >Log in</a>
+            </div>
+        </section>
+        <section>
+            <h2>Log in</h2>
+            <div>
+                <label for="username">username</label>
+                <input type="text" id="username-login" name="username">
+            </div>
+            <div>
+                <label for="password">password</label>
+                <input type="text" id="password-login" name="password">
+            </div>
+            <div>
+                <button type="button" id="login" onclick="userLogIn()">Enter</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy;<span id="year"></span> | CSE 121b | Final Project
+    </footer>
+    <script src="music-player.js"></script>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+    <script src="scripts/w03-task.js"></script>
+</body>
+
+</html>
