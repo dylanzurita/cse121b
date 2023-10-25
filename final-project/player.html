@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music Player</title>
+</head>
+<header>
+    <a id="logo_link" href="music-player.html">
+        <img id="logo" src=# alt="logo">
+    </a>
+    <h1>v70 Music</h1>
+</header>
+<body>
+    <h1>Now Playing: <span id="songTitle">Song Title</span></h1>
+    <h2>Artist: <span id="artistName">Artist Name</span></h2>
+    <audio id="audioPlayer" controls></audio>
+    <button id="playRandomButton">Reproducir Canción Aleatoria</button>
+
+    <div>
+        <h2>Comments</h2>
+        <input type="text"></input>
+    </div>
+
+    <button id="finishButton" onclick="finishProgram()">Finish</button>
+
+
+
+    <script src="scripts/player.js"></script>
+</body>
+</html>
