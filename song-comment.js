@@ -29,12 +29,25 @@ const displaySong = (songList) => {
 
 /* async getSongs Function using fetch()*/
 
-const getTemples = async() => {
-    const response = await fetch("https://byui-cse.github.io/cse121b-ww-course/resources/temples.json");
+const getSongs = async() => {
+    const response = await fetch("https://dylanzurita.github.io/cse121b/song.html");
     if (response.ok){
         const data = await response.json();
-        templeList = data;
-        displayTemples(templeList);
+        songList = data;
+        const randomSong = data[Math.floor(Math.random() * data.length)];
+        displaySong(songList);
+
     }
 
 };
+
+/* reset Function */
+
+const reset = () => {
+    songsElement.innerHTML = " ";
+};
+
+// random song
+
+
+getSongs();
