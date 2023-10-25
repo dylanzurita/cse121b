@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a id="logo_link" href="music-player.html">
+            <img id="logo" src=# alt="logo">
+        </a>
+        <h1>v70 Music</h1>
+    </header>
+    <main>
+        <h2>Here is the song for today...</h2>
+        <p>this song is selected randomly and maybe it has nothing to do with the genres you selected, still we appriciate your time and your comments</p>
+
+
+        <div id="song-player"></div>
+    </main>
+    <footer>
+        &copy;<span id="year"></span> | CSE 121b | Final Project
+    </footer>
+    <script src="song-comment.js"></script>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+</body>
+</html>
